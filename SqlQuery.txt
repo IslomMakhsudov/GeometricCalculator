@@ -1,0 +1,4 @@
+Select p.Name, c.Name
+	from Products as p
+	left join ProductsCategories as PC on p.Id = PC.ProductId
+	left join Categories as c on c.Id = PC.CategoryId
